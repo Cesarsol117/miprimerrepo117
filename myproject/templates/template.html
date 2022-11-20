@@ -9,7 +9,22 @@
 <body>
     <h1>Bienvenido a nuevo mundo</h1>
     <h2>{{ nombre }} {{ apellido }}</h2>
-    <p>el nombre es: {{ nombre }}</p>
+    <h2>{{ nombre }} {{ apellido }} {{ edad }}</h2>
+    <p>el nombre es: {{ nombre }} y tiene {{ edad }} de edad</p>
     <p>Cesar</p>
+    <p>lista de notas {{ lista }}</p>
+    <p>
+        {% for nota in lista %}
+            {% if nota > 5  %}
+                <li style="color: green;"> nota es: {{ nota }}</li>
+            {% else %}
+                <li style="color: red;"> nota es: {{ nota }}</li>
+            {% endif %}
+
+            <!-- <li>la nota es: {{nota}}</li> -->
+        {% endfor %}
+
+    </p>
+
 </body>
 </html>

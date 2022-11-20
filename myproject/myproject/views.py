@@ -19,7 +19,8 @@ def probando_html(request):
     nom = "Cesar"
     ap  = "Pacheco"
 
-    diccionario = {"nombre": nom, "apellido":ap}
+    diccionario = {"nombre": nom, "apellido":ap, "edad": 32, "lista": [1,2,5,8,7,9,4,5,3,1,2] }
+
     archivo = open("D:/Users/acer/Desktop/coder1/myproject/templates/template.html")
     template = Template(archivo.read())
     archivo.close()
